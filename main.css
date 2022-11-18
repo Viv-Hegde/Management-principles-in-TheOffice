@@ -1,0 +1,9 @@
+#topics h2:hover {
+  background-color: rgb(219, 216, 216);
+}
+
+.hidden {
+  /* Used to override other display properties,
+   * .hidden should always take highest precedence */
+  display: none !important;
+}
