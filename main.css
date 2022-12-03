@@ -1,9 +1,97 @@
-#topics h2:hover {
-  background-color: rgb(219, 216, 216);
+/*
+  CSS file used by "Management Principles: The Office" webpage.
+  Created by: Vivek Hegde
+  Contributors: Trina Chuang
+  Date: December 3, 2022
+
+  This webpage uses "Husky Purple" and "Husky Gold" colors as the primary color palatte.
+  Seconadary color palatte includes colors like white, black and shades of grey.
+*/
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  width: 88%;
 }
 
+h1, #tabs div, footer p {
+  text-align: center;
+}
+
+h1 {
+  font-size: 35px;
+  color: #85754d;
+}
+
+/* Highest priority */
 .hidden {
-  /* Used to override other display properties,
-   * .hidden should always take highest precedence */
   display: none !important;
+}
+
+#tabs, #unit {
+  display: flex;
+  justify-content: start;
+}
+
+#tabs div {
+  padding-left: 6%;
+  padding-right: 6%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: #ffffff 3px;
+  border-radius: 5px;
+  background-color: #4b2e83;
+  margin: 0.3px;
+  color: #b7a57a;
+}
+
+/* Highest priority among tab styles */
+#tabs .selected {
+  background-color: #1d1335 !important;
+}
+
+#tabs div:hover {
+  background-color: #3b2469;
+}
+
+#contents {
+  margin-top: 50px;
+}
+
+#tv-container {
+  background: url('images/tv.png') no-repeat top left transparent;
+  width: 548px;
+  height: 372px;
+  position: relative;
+}
+
+#tv-container p, #tv-container video {
+  position: absolute;
+}
+
+#tv-container p {
+  color: #ffffff;
+  top: 145px;
+  left: 138px;
+}
+
+#tv-container video {
+  width: 469px;
+  height: 255px;
+  top: 49px;
+  left: 42px;
+}
+
+#descriptions {
+  margin-left: 20px;
+}
+
+footer {
+  background-color: #E0DBD7;
+  width: 100%;
+}
+
+footer p {
+  padding: 5px;
 }

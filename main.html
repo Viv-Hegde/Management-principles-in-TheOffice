@@ -1,4 +1,13 @@
 <!DOCTYPE html>
+<!--
+  HTML for "Management Principles: The Office" webpage.
+  Created by: Vivek Hegde
+  Contributors: Trina Chuang, Sarah Bird, Lixiao Kuang
+  Date: December 3, 2022
+
+  Video credits: "The Office" all seasons
+  Case studies credits:
+ -->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -6,43 +15,86 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Management Principles: The Office</title>
   <link href="main.css" rel='stylesheet' />
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
   <script src=main.js></script>
 </head>
 <body>
-  <h1>Management Principles portrayted in TV shows</h1>
-  <h2><u>Introduction:</u></h2>
-  <p>"intro goes here"</p>
-  <section id="topics">
-    <section id="topic 1">
-      <h2>Topic 1</h2>
-      <div class="topic-info hidden">
-        <h3><u>Description:</u></h3>
-        <p>"clip description goes here"</p>
-        <video controls src="clips/videoplayback.mp4"></video>
-        <h3><u>Case study:</u></h3>
-        <p>"case study description goes here"</p>
+  <h1>Management Principles in TV Shows / Media</h1>
+  <!-- Section that contains elements for navigation -->
+  <section id="tabs">
+    <div class="selected">Intro</div>
+    <div>Topic 1</div>
+    <div>Topic 2</div>
+    <div>Topic 3</div>
+    <div>Topic 4</div>
+    <div>Topic 5</div>
+  </section>
+  <!-- Section that contains contents of all tabs -->
+  <section id="contents">
+    <!-- Section that contains video clips and their descriptions -->
+    <section id="unit">
+      <!-- Section that contains all clips -->
+      <div id="tv-container">
+        <p class="">Click on the tabs above to learn more!</p>
+        <video controls class="hidden" src="clips/videoplayback.mp4"></video>
+        <video controls class="hidden" src="clips/videoplayback.mp4"></video>
+        <video controls class="hidden" src="clips/videoplayback.mp4"></video>
+        <video controls class="hidden" src="clips/videoplayback.mp4"></video>
+        <video controls class="hidden" src="clips/videoplayback.mp4"></video>
+      </div>
+      <!-- Section that contains all descriptions -->
+      <div id="descriptions">
+        <div class="">
+          <h2><u>Introduction:</u></h2>
+          <p>description goes here...</p>
+        </div>
+        <div class="hidden">
+          <h2><u>Topic 1:</u></h2>
+          <p>description goes here...</p>
+        </div>
+        <div class="hidden">
+          <h2><u>Topic 2:</u></h2>
+          <p>description goes here...</p>
+        </div>
+        <div class="hidden">
+          <h2><u>Topic 3:</u></h2>
+          <p>description goes here...</p>
+        </div>
+        <div class="hidden">
+          <h2><u>Topic 4:</u></h2>
+          <p>description goes here...</p>
+        </div>
+        <div class="hidden">
+          <h2><u>Topic 5:</u></h2>
+          <p>description goes here...</p>
+        </div>
       </div>
     </section>
-    <section id="topic 2">
-      <h2>Topic 2</h2>
-      <div class="topic-info hidden">
-        <h3><u>Description:</u></h3>
-        <p>"clip description goes here"</p>
-        <video controls src="clips/videoplayback.mp4"></video>
-        <h3><u>Case study:</u></h3>
-        <p>"case study description goes here"</p>
+    <!-- Section that contains all case studies -->
+    <section id="case-studies" class="hidden">
+      <h2><u>Case Study:</u></h2>
+      <div class="hidden">
+        <p>description1 goes here...</p>
       </div>
-    </section>
-    <section id="topic 3">
-      <h2>Topic 3</h2>
-      <div class="topic-info hidden">
-        <h3><u>Description:</u></h3>
-        <p>"clip description goes here"</p>
-        <video controls src="clips/videoplayback.mp4"></video>
-        <h3><u>Case study:</u></h3>
-        <p>"case study description goes here"</p>
+      <div class="hidden">
+        <p>description2 goes here...</p>
+      </div>
+      <div class="hidden">
+        <p>description3 goes here...</p>
+      </div>
+      <div class="hidden">
+        <p>description4 goes here...</p>
+      </div>
+      <div class="hidden">
+        <p>description5 goes here...</p>
       </div>
     </section>
   </section>
+  <footer>
+    <p>
+      Portions of this page &copy;2022 UW Bothell CSS 350 Team Enigma;
+      All other citations in page source.
+    </p>
+  </footer>
 </body>
 </html>
